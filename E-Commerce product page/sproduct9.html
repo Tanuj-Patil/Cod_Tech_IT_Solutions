@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/n1.jpg" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Men's Casual Shirts</h6>
+            <h4>FYLTR Men's Solid Casual Non Iron Shirt</h4>
+            <h2>₹ 600</h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Description            </h4>
+            <span>Welcome to FYLTR – a new line of casual clothing, featuring only solid colors. We believe that solid colors are more than just a fashion choice, they represent a mindset - a bold statement of timeless elegance. FYLTR is designed for those who appreciate the simplicity and sophistication of solids, and we're proud to be different. We're not here for prints or checks, and we never will be. Our brand is for those who want to join the solids bandwagon and make a bold statement with unwavering confidence. Explore our range of solid-colored casuals for both men and women and experience the unmatched sophistication of FYLTR.</span>
+        </div>
+    </section>
+    <!-- Add this code inside the <body> tag, before the closing </body> tag -->
+<div id="cartPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closeCartPopup()">&times;</span>
+        <p>Your item has been successfully added to the cart.</p>
+    </div>
+</div>
+
+
+   
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Shahada, Dist: Nandurbar, Maharashtra </p>
+            <p><strong>Phone:</strong> +01 4567 78965 </p>
+            <p><strong>Hours:</strong> 10:00, Mon - Sat</p>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+        </div class="copyright">
+            <p>2023, Always Support - MotionCut</p>
+
+        <div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smalling = document.getElementsByClassName("small-img");
+
+        smalling[0].onclick = function() {
+            MainImg.src = smalling[0].src;
+        }
+        smalling[1].onclick = function() {
+            MainImg.src = smalling[1].src;
+        }
+        smalling[2].onclick = function() {
+            MainImg.src = smalling[2].src;
+        }
+        smalling[3].onclick = function() {
+            MainImg.src = smalling[3].src;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
